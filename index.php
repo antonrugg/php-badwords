@@ -8,8 +8,12 @@ tre asterischi (***) tutte le occorrenze della parola da censurare. -->
 
 <?php 
     $quote = "“Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.”";
-    $quoteLength = strlen($quote);
+    $quoteUncensoredLength = strlen($quote);
     $censoredWord = $_GET["censor"];
+
+    $quoteCensored = str_replace($censoredWord, "***", $quote);
+    $quoteCensoredLength = strlen($quoteCensored);
+
     //http://localhost/php-badwords/index.php?censor=insert word to censor
 
     //strlen(stringa)
@@ -19,4 +23,7 @@ tre asterischi (***) tutte le occorrenze della parola da censurare. -->
 ?>
 
 <p>Cultist says: <?php echo $quote ?></p>
-<p>Words said before the end of the world: <?php echo $quoteLength ?></p>
+<p>Words said before censorship of the old ones: <?php echo $quoteUncensoredLength ?></p>
+
+<p>Cultist says after censor: <?php echo $quoteCensored ?></p>
+<p>Words said after censorship of the old ones: <?php echo $quoteCensoredLength ?></p>
