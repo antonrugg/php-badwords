@@ -7,5 +7,7 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con
 tre asterischi (***) tutte le occorrenze della parola da censurare. -->
 
 <?php 
-    phpinfo();
+    $quote = "“Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.”";
+
+    echo('Cultist says: ' . $quote);
 ?>
