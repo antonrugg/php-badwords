@@ -9,5 +9,7 @@ tre asterischi (***) tutte le occorrenze della parola da censurare. -->
 <?php 
     $quote = "“Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.”";
 
-    echo('Cultist says: ' . $quote);
+    
 ?>
+
+<p>Cultist says: <?php echo $quote ?></p>
